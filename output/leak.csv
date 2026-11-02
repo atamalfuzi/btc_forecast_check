@@ -1,0 +1,9 @@
+step,inputs,target,validation,r2,rmse
+1,same day,"price, min-max scaled","random 10%, 200 draws",0.999406,0.006179
+2,same day,"price, min-max scaled",10 unshuffled folds,0.993918,0.005964
+3,same day,"price, dollars","last 10%, scaled on past",0.994347,745.040786
+4,day before,"price, dollars","last 10%, scaled on past",0.969815,1721.617898
+5,no-change forecast,"price, dollars",last 10%,0.970287,1708.101442
+6,same day,log return,"last 10%, scaled on past",0.79142,0.016123
+7,day before,log return,"last 10%, scaled on past",-0.019737,0.03565
+8,no-change forecast,log return,last 10%,-0.004558,0.035384

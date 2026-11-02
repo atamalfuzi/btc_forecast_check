@@ -1,0 +1,7 @@
+forecast and scale,mse
+"No-change forecast, price in dollars",2.80879e+06
+"No-change forecast, price min-max scaled",0.000629665
+"No-change forecast, price min-max scaled, all the paper's days",0.0001867
+"No-change forecast, log return",0.00121586
+"ARIMA(4,1,1) refit daily, log return",0.00123802
+Forecasting one half for an up or down label,0.25

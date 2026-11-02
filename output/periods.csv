@@ -1,0 +1,13 @@
+period,days,model,oos_r2,dm,dm_p
+All scored days,3582,"ARIMA(4,1,1)",-0.00116505,0.349548,0.726699
+All scored days,3582,Lagged regression,-0.00583097,1.51017,0.131088
+All scored days,3582,Gradient boosting,-0.0327481,3.31337,0.000930947
+Paper's test days,183,"ARIMA(4,1,1)",-0.0182346,1.79123,0.0749189
+Paper's test days,183,Lagged regression,6.35583e-05,-0.00451172,0.996405
+Paper's test days,183,Gradient boosting,-0.000393132,0.0164324,0.986907
+Through the paper's file,2121,"ARIMA(4,1,1)",-0.00164541,0.410317,0.681615
+Through the paper's file,2121,Lagged regression,-0.00763203,1.65787,0.0974923
+Through the paper's file,2121,Gradient boosting,-0.0357942,3.04296,0.00237141
+After the paper's file,1461,"ARIMA(4,1,1)",0.000873986,-0.204331,0.838124
+After the paper's file,1461,Lagged regression,0.00181412,-0.327636,0.743234
+After the paper's file,1461,Gradient boosting,-0.0198183,1.5857,0.113025
