@@ -6,15 +6,15 @@ For whoever adds this to atamalfuzi.github.io. Figures are in `figures/`.
 
 **Checking my Bitcoin forecasts**
 
-Rebuild of an MA paper, 2022 and 2026
+Forecast evaluation in Python, 2026
 
-My 2022 paper reported a regression score of 0.9994 for Bitcoin's closing price. The rebuild shows that score came from using the same day's high and low, and tests the models again using only earlier information. Across 3,582 days to November 2026, none of them beats a forecast of no change.
+An unpublished 2022 study of mine reported a regression score of 0.9994 for Bitcoin's closing price. The rebuild shows that score came from using the same day's high and low, and tests the models again using only earlier information. Across 3,582 days to November 2026, none of them beats a forecast of no change.
 
 ## Project page
 
 ### Checking my Bitcoin forecasts
 
-In 2022 I wrote an MA paper at SFU comparing ways to forecast Bitcoin's price. It concluded that a linear regression worked best, with a score of 0.9994. I rebuilt it in 2026 to see whether that held up. It didn't, and the reasons are useful for anyone evaluating a forecast. This is a lesson in method. It isn't trading or investment advice.
+In an unpublished 2022 study I compared ways to forecast Bitcoin's daily price and concluded that a linear regression worked best, with a score of 0.9994. I rebuilt it in 2026 to see whether that held up. It didn't, and the reasons are useful for anyone evaluating a forecast. This is a lesson in method. It isn't trading or investment advice.
 
 **Where the score came from.** The regression predicted each day's close from that day's open, high, low and volume. The high and low aren't known until the day is over, so this can't be used as a forecast. Rebuilding the setup from the paper's own data file gives 0.9995, against the 0.9994 reported. On daily returns, the same regression has an R² of 0.79 with same-day inputs and −0.02 with inputs from the day before, using the Bitstamp prices in this chart.
 

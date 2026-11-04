@@ -2,7 +2,7 @@
 
 [![tests](https://github.com/atamalfuzi/btc_forecast_check/actions/workflows/tests.yml/badge.svg)](https://github.com/atamalfuzi/btc_forecast_check/actions/workflows/tests.yml)
 
-A corrected rebuild of my 2022 SFU MA paper, "Bitcoin price forecasting using different methods". The paper concluded that a linear regression forecast Bitcoin's closing price with a score of 0.9994. That score came from using the same day's high and low to predict the same day's close. Using only earlier information, on one common scale, across 3,582 days from January 2017 to November 2026, none of the models beats a forecast of no change. Python, with statsmodels and scikit-learn.
+A rebuild of an unpublished 2022 study of mine, "Bitcoin price forecasting using different methods". It concluded that a linear regression forecast Bitcoin's closing price with a score of 0.9994. That score came from using the same day's high and low to predict the same day's close. Using only earlier information, on one common scale, across 3,582 days from January 2017 to November 2026, none of the models beats a forecast of no change. Python, with statsmodels and scikit-learn.
 
 This is a lesson in method. It isn't a trading system or investment advice, and nothing here says what Bitcoin's price will do.
 
