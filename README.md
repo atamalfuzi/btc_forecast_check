@@ -13,7 +13,7 @@ This is a lesson in method. It isn't a trading system or investment advice, and 
 | [Where did 0.9994 come from?](#1-where-did-09994-come-from) | Same regression, with one problem fixed at a time | Look-ahead. R² on daily returns falls from 0.80 to −0.01 once the day's own prices are removed. |
 | [Could the paper's models be ranked by MSE?](#2-could-the-paper-rank-its-models-by-mse) | One forecast measured on each scale | No. The same forecast has an MSE from 0.0006 to 2.8 million depending on the units. |
 | [Does anything beat a random walk?](#3-does-anything-beat-a-random-walk) | Walk-forward, Diebold-Mariano, Clark-West | No. ARIMA and the regression are indistinguishable from it, and gradient boosting is worse. |
-| [Can direction be forecast?](#4-can-direction-be-forecast) | Logit, walk-forward calibration, Brier scores | Barely. Accuracy of about 51.7% against 51.6% for always saying up. |
+| [Can direction be forecast?](#4-can-direction-be-forecast) | Logit, walk-forward calibration, Brier scores | Barely. Accuracy of at most 51.7% against 51.6% for always saying up. |
 
 ## What the paper reported and what changed
 
@@ -72,7 +72,7 @@ The logit's 15.418 is not an MSE. It equals the log loss of hard 0 or 1 predicti
 
 Each model forecasts the next day's log return from the previous close. All models are refit every 21 days on earlier days only, and the scaler is refit with them. The inputs are five lagged returns, the day's high-low range, volume against its 30-day average, and 30-day volatility and momentum. Model settings were fixed before scoring and not tuned.
 
-| Model | Root MSE, log return | Out-of-sample R² vs random walk | Diebold-Mariano, squared error (p) | Absolute error (p) | Clark-West (p) | Implied price, mean error |
+| Model | Root MSE, log return | Out-of-sample R² vs random walk | Diebold-Mariano, squared error (p) | Absolute error (p) | Clark-West (p) | Implied price, mean absolute error |
 |---|---:|---:|---:|---:|---:|---:|
 | Random walk | 0.0359 | 0 | | | | 2.37% |
 | ARIMA(4,1,1) | 0.0359 | −0.12% | 0.35 (0.73) | 0.55 | 0.14 | 2.37% |
